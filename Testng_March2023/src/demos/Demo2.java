@@ -8,9 +8,5 @@ public class Demo2 {
   public void mainTest() {
 	  System.out.println("Inside mainTest from Demo2");  
   }
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Inside beforeTest from Demo2");
-  }
 
 }

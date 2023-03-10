@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-08T23:52:26 IST" name="Default suite" finished-at="2023-03-08T23:52:26 IST" duration-ms="70">
+  <suite started-at="2023-03-10T08:50:56 IST" name="Suite" finished-at="2023-03-10T08:50:56 IST" duration-ms="79">
     <groups>
     </groups>
-    <test started-at="2023-03-08T23:52:26 IST" name="Default test" finished-at="2023-03-08T23:52:26 IST" duration-ms="70">
-      <class name="demos.Demo1">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:demos.Demo1@41e1e210]" started-at="2023-03-08T23:52:26 IST" name="beforeTest" finished-at="2023-03-08T23:52:26 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-03-10T08:50:56 IST" name="Test" finished-at="2023-03-10T08:50:56 IST" duration-ms="79">
+      <class name="demos.Demo5_testNG_Parameter_Optional">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:demos.Demo5_testNG_Parameter_Optional@4e5ed836]" started-at="2023-03-10T08:50:56 IST" name="beforeClass" finished-at="2023-03-10T08:50:56 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.ameriprise.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="testCase()[pri:0, instance:demos.Demo1@41e1e210]" started-at="2023-03-08T23:52:26 IST" name="testCase" finished-at="2023-03-08T23:52:26 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:demos.Demo5_testNG_Parameter_Optional@4e5ed836]" started-at="2023-03-10T08:50:56 IST" name="f" finished-at="2023-03-10T08:50:56 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase -->
-      </class> <!-- demos.Demo1 -->
-      <class name="demos.Demo2">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:demos.Demo2@27ff5d15]" started-at="2023-03-08T23:52:26 IST" name="beforeSuite" finished-at="2023-03-08T23:52:26 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method signature="mainTest()[pri:0, instance:demos.Demo2@27ff5d15]" started-at="2023-03-08T23:52:26 IST" name="mainTest" finished-at="2023-03-08T23:52:26 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mainTest -->
-      </class> <!-- demos.Demo2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- f -->
+      </class> <!-- demos.Demo5_testNG_Parameter_Optional -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
