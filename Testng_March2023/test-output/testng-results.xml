@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T08:50:56 IST" name="Suite" finished-at="2023-03-10T08:50:56 IST" duration-ms="79">
+  <suite started-at="2023-03-12T09:21:51 IST" name="Suite" finished-at="2023-03-12T09:21:51 IST" duration-ms="294">
     <groups>
     </groups>
-    <test started-at="2023-03-10T08:50:56 IST" name="Test" finished-at="2023-03-10T08:50:56 IST" duration-ms="79">
-      <class name="demos.Demo5_testNG_Parameter_Optional">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:demos.Demo5_testNG_Parameter_Optional@4e5ed836]" started-at="2023-03-10T08:50:56 IST" name="beforeClass" finished-at="2023-03-10T08:50:56 IST" duration-ms="20" status="PASS">
+    <test started-at="2023-03-12T09:21:51 IST" name="Test" finished-at="2023-03-12T09:21:51 IST" duration-ms="17">
+    </test> <!-- Test -->
+    <test started-at="2023-03-12T09:21:51 IST" name="Test1" finished-at="2023-03-12T09:21:51 IST" duration-ms="109">
+      <class name="demos.Demo3">
+        <test-method signature="testCase()[pri:0, instance:demos.Demo3@7857fe2]" started-at="2023-03-12T09:21:51 IST" name="testCase" finished-at="2023-03-12T09:21:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+      </class> <!-- demos.Demo3 -->
+      <class name="demos.Demo4">
+        <test-method signature="testCase()[pri:0, instance:demos.Demo4@6f15d60e]" started-at="2023-03-12T09:21:51 IST" name="testCase" finished-at="2023-03-12T09:21:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+      </class> <!-- demos.Demo4 -->
+      <class name="demos.Demo1">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:demos.Demo1@3932c79a]" started-at="2023-03-12T09:21:51 IST" name="beforeClass" finished-at="2023-03-12T09:21:51 IST" duration-ms="31" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +37,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:demos.Demo5_testNG_Parameter_Optional@4e5ed836]" started-at="2023-03-10T08:50:56 IST" name="f" finished-at="2023-03-10T08:50:56 IST" duration-ms="7" status="PASS">
+        <test-method signature="testCase()[pri:0, instance:demos.Demo1@3932c79a]" started-at="2023-03-12T09:21:51 IST" name="testCase" finished-at="2023-03-12T09:21:51 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- demos.Demo5_testNG_Parameter_Optional -->
-    </test> <!-- Test -->
+        </test-method> <!-- testCase -->
+        <test-method is-config="true" signature="aftersuit()[pri:0, instance:demos.Demo1@3932c79a]" started-at="2023-03-12T09:21:51 IST" name="aftersuit" finished-at="2023-03-12T09:21:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuit -->
+      </class> <!-- demos.Demo1 -->
+      <class name="demos.Demo2">
+        <test-method signature="Test()[pri:0, instance:demos.Demo2@20b2475a]" started-at="2023-03-12T09:21:51 IST" name="Test" finished-at="2023-03-12T09:21:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+      </class> <!-- demos.Demo2 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

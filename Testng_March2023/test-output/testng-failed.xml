@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser12" value="chrome"/>
+  <parameter name="url" value="https://www.ameriprise.com/"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="demos.Demo5_testNG_Parameter_Optional">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- demos.Demo5_testNG_Parameter_Optional -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

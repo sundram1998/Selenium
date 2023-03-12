@@ -9,8 +9,4 @@ public class Demo3 {
   public void testCase() {
 	  System.out.println("Inside Test from Demo3");
   }
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("Inside beforeTest from Demo3");
-  }
 }

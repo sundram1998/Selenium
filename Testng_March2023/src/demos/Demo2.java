@@ -5,8 +5,8 @@ import org.testng.annotations.BeforeSuite;
 
 public class Demo2 {
   @Test
-  public void mainTest() {
-	  System.out.println("Inside mainTest from Demo2");  
+  public void Test() {
+	  System.out.println("Inside Test from Demo2");  
   }
 
 }
