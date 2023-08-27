@@ -5,23 +5,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HelloWorld {
+public class AskedInInterview {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+		String chromedriver = "C:\\Users\\HP\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";
 		WebDriver driver = new ChromeDriver();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\ChromeDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", chromedriver);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
 		driver.findElement(By.xpath("//textarea[@class=\"gLFyf\"]")).sendKeys("selenium");
+		Thread.sleep(2000);
 		List<WebElement> listBoxElements = driver.findElements(By.xpath("//ul[@role='listbox']/li"));
-		for(WebElement listBox:listBoxElements) {
+		for (WebElement listBox : listBoxElements) {
 			System.out.println(listBox.getText());
+			if (listBox.getText().equalsIgnoreCase("selenium webdriver")) {
+				listBox.click();
+				break;
+			}
 		}
+		System.out.println("Hello world");
+		
+//		driver.findElement(By.xpath("//ul[@role='listbox']/li[2]")).click();
+		Thread.sleep(2000);
+
+		
 		driver.quit();
-		Thread.sleep(10000); 
-		driver.quit();
-		System.out.println(driver.findElement(By.xpath("//img[@class='lnXdpd']")).getText());
 	}
 
 }
