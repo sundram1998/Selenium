@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class XpathAndCSSSelecters {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void setUp() throws InterruptedException {
 		// TODO Auto-generated method stub
 		String chromedriver = "C:\\Users\\HP\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";
 		WebDriver driver = new ChromeDriver();
@@ -38,16 +38,28 @@ public class XpathAndCSSSelecters {
 		// Using cssSelector tagname[placehoder='value']
 		WebElement emailElement = driver.findElement(By.cssSelector("input[placeholder='Email']"));
 		emailElement.sendKeys("sundram.yadav@infosys.com");
-
+ 
 		Boolean verifyTitle = driver.getTitle().equalsIgnoreCase("Rahul Shetty Academy - Login page");
 		System.out.println(verifyTitle);
 		assertTrue(verifyTitle); // Hard Assertion
-		String ActualTitle = driver.getTitle();
-//		String ExpectedTitle = "Rahul Shetty Academy - Login page";
-//
-//		Assert.assertEquals(ActualTitle, ExpectedTitle);
-//		softAssert.assertEquals(ActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
-		Thread.sleep(3000);
+		String actualTitle = driver.getTitle();
+		System.out.println(actualTitle);
+
+		String expectedTitle = "Rahul Shetty Academy - Login page";
+
+//		Assert.assertEquals(actualTitle, expectedTitle);
+
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(actualTitle, "Rahul Shetty Academy - Login page","This is not matching");
+		softAssert.assertNotEquals(actualTitle, expectedTitle);
+		softAssert.assertNull(actualTitle);
+		softAssert.assertNotNull(actualTitle);
+		softAssert.assertTrue("Rahul Shetty Academy - Login page".equals("Rahul Shetty Academy - Login page"),
+				"First soft assert failed");
+		softAssert.assertAll();
+
+		System.out.println("Hello");
+		Thread.sleep(5000);
 		driver.quit();
 
 	}
