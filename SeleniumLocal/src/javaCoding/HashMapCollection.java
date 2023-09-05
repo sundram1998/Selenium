@@ -1,3 +1,4 @@
+package javaCoding;
 import java.util.*;
 public class HashMapCollection {
 	public static void main(String[] args) {

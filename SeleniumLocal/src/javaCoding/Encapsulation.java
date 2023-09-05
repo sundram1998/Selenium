@@ -1,3 +1,4 @@
+package javaCoding;
 
 public class Encapsulation {
 	

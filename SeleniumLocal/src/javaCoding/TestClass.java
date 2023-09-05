@@ -1,3 +1,4 @@
+package javaCoding;
 // Java program to demonstrate working of
 // interface
 

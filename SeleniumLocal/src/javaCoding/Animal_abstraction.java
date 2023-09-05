@@ -1,3 +1,4 @@
+package javaCoding;
 abstract class Animal{
 	public abstract void makeSound();
 }

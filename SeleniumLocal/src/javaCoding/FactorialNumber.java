@@ -1,3 +1,4 @@
+package javaCoding;
 import java.util.Scanner;
 
 public class FactorialNumber {
