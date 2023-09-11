@@ -23,13 +23,22 @@ public class CSSSelectors {
 		
 		Thread.sleep(3000);
 		
-		List<WebElement> labelList=driver.findElements(By.xpath("//div[@id='checkbox-example']/fieldset/label"));
+		List<WebElement> labelList=driver.findElements(By.cssSelector("div.right-align>fieldset>label"));
 		for(WebElement label:labelList) {
 			System.out.println(label.getText());
 		}
 		       
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 		
+		List<WebElement> radioElements=driver.findElements(By.cssSelector("div#radio-btn-example>fieldset>label"));	
+		for(WebElement label:radioElements) {
+			System.out.println(label.getText());
+		}
+		// :nth-of-type(n) will select all the element of list
+		List<WebElement> tableRowElements=driver.findElements(By.cssSelector("table[id='product'][class='table-display']>tbody>tr:nth-of-type(2)>td"));
+		for(WebElement label:tableRowElements) {
+			System.out.println(label.getText());
+		}
 		driver.quit();
 	}
 
