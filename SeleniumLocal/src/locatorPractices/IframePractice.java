@@ -20,6 +20,7 @@ public class IframePractice {
 //		driver.switchTo().alert().dismiss();
 		WebElement addOn=driver.findElement(By.cssSelector("div[class=\"css-1dbjc4n r-1rngwi6 r-o9xkwf\"]>svg[data-testid=\"svg-img\"]:nth-of-type(1)"));
 		Thread.sleep(2000);
+		//move to an element or mouseover
 		Actions action=new Actions(driver);
 		action.moveToElement(addOn).build().perform();
 		
