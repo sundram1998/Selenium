@@ -9,6 +9,11 @@ public class Employee {
 		this.age=age;
 		this.name=name;
 		this.dept=dept;
+//		System.out.println(name+" || "+dept+" || "+age);
+	}
+	
+	public static void main(String[] args) {
+		Employee employee=new Employee(25, "Sundaram", "Quality Assurance");
 	}
 	
 }
