@@ -26,8 +26,12 @@ public class CssLocators {
 //		softAssert.assertEquals(headerElement.getText(), " Welcome to BlazeMeter Docs");
 		softAssert.assertAll();
 		
-		driver.quit();
+//		driver.quit();
+		WebElement targetElement=driver.findElement(By.xpath("//div/ul[@id='categories']/li[13]/preceding-sibling::li[1]"));
 
+		System.out.println(targetElement.getText());
+
+		driver.quit();
 	}
 
 }
