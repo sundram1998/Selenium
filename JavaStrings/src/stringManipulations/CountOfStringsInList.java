@@ -25,6 +25,8 @@ public class CountOfStringsInList {
         for (String s: distinct) {
             System.out.println(s + ": " + Collections.frequency(arrayList, s));
         }
+        
+        String[] arr= {"sun","mon","tues","mon"};
 
 	}
 
