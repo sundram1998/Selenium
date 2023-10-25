@@ -21,8 +21,8 @@ public class Factorial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Factorial factorial=new Factorial();
-		System.out.println(factorial.factorialByRecusion(5));
-		System.out.println(factorial.factorialByLoop(5));
+		System.out.println(factorial.factorialByRecusion(10));
+		System.out.println(factorial.factorialByLoop(10));
 
 	}
 

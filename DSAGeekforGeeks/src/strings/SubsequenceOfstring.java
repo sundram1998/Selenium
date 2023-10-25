@@ -1,13 +1,11 @@
-package stringManipulations;
+package strings;
 
-public class SubsequenceOfString {
+public class SubsequenceOfstring {
 	
-	public boolean isSubstring(String str,String substring) {
-		int j=0;
-		int i=0;
+	public static boolean isSubstring(String str,String substring) {
+		int i=0,j=0;
 		while(i<str.length()) {
 			if (str.charAt(i)==substring.charAt(j)) {
-				
 				if (j==substring.length()-1) {
 					return true;
 				}
@@ -19,11 +17,12 @@ public class SubsequenceOfString {
 		}
 		return false;
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SubsequenceOfString sbOfString=new SubsequenceOfString();
-		System.out.println(sbOfString.isSubstring("ABCDEF", "ADEF"));
+		System.out.println(isSubstring("abcdef", "abcf"));
 
 	}
 
