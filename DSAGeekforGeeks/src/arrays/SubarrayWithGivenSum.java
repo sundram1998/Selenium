@@ -5,15 +5,15 @@ public class SubarrayWithGivenSum {
 	public static int[] subArray(int[] arr, int target) {
 		int[] noRes= {-1,-1};
 		int curSum = 0;
-		int s = 0;
-		for (int e = 0; e < arr.length; e++) {
-			curSum += arr[e];
+		int startIndex = 0;
+		for (int end = 0; end < arr.length; end++) {
+			curSum += arr[end];
 			while (target < curSum) {
-				curSum = curSum - arr[s];
-				s++;
+				curSum = curSum - arr[startIndex];
+				startIndex++;
 			}
 			if (curSum == target) {
-				int[] res= {s,e};
+				int[] res= {startIndex,end};
 				return res;
 			}
 
