@@ -4,7 +4,7 @@ public class Test extends EmployeeData{
 
 	public static void main(String[] args) {
 		EmployeeData test=new EmployeeData();
-		test.setEmpId(1149711);
+		test.setEmpId(9878978);
 		System.out.println(test.getEmpId());
 	}
 }
