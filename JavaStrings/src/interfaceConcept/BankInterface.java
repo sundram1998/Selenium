@@ -9,7 +9,7 @@ public interface BankInterface {
 	  5:We can not create object of interface
 	  6:Interface is abstract in nature
 	  7:It is used to achieve abstraction and support inheritance functionality
-	  8:It can be used to achieve loose couping
+	  8:It can be used to achieve loose coupling
 	*/
 	
 	int min_bal=1000;
