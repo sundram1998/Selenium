@@ -39,9 +39,9 @@ public class SoftAssertionDemo {
 		driver.findElement(By.cssSelector("input[placeholder='* Password Confirmation']")).sendKeys("Test");
 		driver.findElement(By.cssSelector("button#enlist_btn")).click();
 
-		String[] firldErrors= {"doesn't match Password",};
+//		String[] firldErrors= {,};
 		WebElement errorElement = driver.findElement(By.cssSelector("div[class='field_value']>small"));
-		String expectedString = ;
+		String expectedString = "doesn't match Password";
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(expectedString, errorElement.getText());
 		System.out.println("This code will be executed even if the assertion fails.");
