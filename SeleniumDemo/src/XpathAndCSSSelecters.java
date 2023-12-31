@@ -38,7 +38,7 @@ public class XpathAndCSSSelecters {
 
 		// Using cssSelector tagname[placehoder='value']
 		WebElement emailElement = driver.findElement(By.cssSelector("input[placeholder='Email']"));
-		emailElement.sendKeys("sundram.yadav@infosys.com");
+		emailElement.sendKeys("Test@gmail.com");
  
 		Boolean verifyTitle = driver.getTitle().equalsIgnoreCase("Rahul Shetty Academy - Login page");
 		System.out.println(verifyTitle);

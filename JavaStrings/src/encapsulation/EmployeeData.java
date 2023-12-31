@@ -40,9 +40,9 @@ public class EmployeeData {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		EmployeeData data=new EmployeeData();
-		data.setEmpId(1149711);
-		data.setEmpMail("sundram.yadav@infosys.com");
-		data.setName("Sundram Yadav");
+		data.setEmpId(1234);
+		data.setEmpMail("Test@gmail.com");
+		data.setName("Sundaram Yadav");
 		
 		System.out.println(data.getName());
 
