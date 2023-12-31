@@ -38,14 +38,15 @@ public class RemoveDuplicatesFromArray {
 	 */
 	public static void removeDupicatesInUnsortedArray(int[] nums, int val) {
 		int i = 0;
-		for (int j = 1; j < nums.length; j++) {// 1,1,2
-			if (nums[i] != val) {
+		for (int j = 0; j < nums.length; j++) {// 1,1,2
+			if (nums[j] != val) {
 				nums[i] = nums[j];
 				i++;
 			}
 		}
-		for (int k = 0; k < nums.length; i++) {
-			System.out.print(nums[i] + " ");
+		System.out.println(i);
+		for (int k = 0; k < nums.length; k++) {
+			System.out.print(nums[k] + " ");
 		}
 	}
 
