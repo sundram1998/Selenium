@@ -12,48 +12,19 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class Demo02 {
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) {
-	  System.out.println("This is inside Test Demo02");
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-  }
+	@Test(dataProvider = "dp")
+	public void f(Integer n, String s) {
+		System.out.println("This is inside Test 1");
+	}
 
-  @AfterMethod
-  public void afterMethod() {
-  }
+	@Test(dataProvider = "dp")
+	public void g(Integer n,String s) {
+		System.out.println("This is inside Test 2");
+	}
 
-
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-
-  @BeforeTest
-  public void beforeTest() {
-  }
-
-  @AfterTest
-  public void afterTest() {
-  }
-
-  @BeforeSuite
-  public void beforeSuite() {
-  }
-
-  @AfterSuite
-  public void afterSuite() {
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, new Object[] { 3, "c" } };
+	}
 
 }

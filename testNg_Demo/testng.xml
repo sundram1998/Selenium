@@ -5,6 +5,7 @@
     <classes>
       <class name="com.demo_01.Demo01"/>
       <class name="com.demo_01.Demo02"/>
+      <class name="com.demo_01.SoftAssertionDemo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

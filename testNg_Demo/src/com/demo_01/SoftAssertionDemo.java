@@ -17,6 +17,36 @@ import org.testng.annotations.AfterMethod;
 public class SoftAssertionDemo {
 //	String chromedriver = "C:\\Users\\HP\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";
 	ChromeDriver driver = new ChromeDriver();
+	@BeforeMethod
+	public void beforeMethod() {
+
+		driver.manage().window().maximize();
+//		System.setProperty("webdriver.chromedriver", chromedriver);
+		driver.get("https://www.codewars.com/");
+	}
+
+	@Test
+	public void errorAssertions() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		String expectedTitle = "Codewars - Achieve mastery through coding practice and developer mentorship";
+
+		driver.getTitle().contains(expectedTitle);
+		System.out.println(driver.getTitle());
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='button-group is-center']/a")));
+		driver.findElement(By.xpath("//div[@class='button-group is-center']/a")).click();
+
+		WebElement linkGitGubAccountButton = driver.findElement(By.xpath("//div[@data-controller='auth']/button"));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='p-6 mb-2']/img")));
+		System.out.println(linkGitGubAccountButton.getText());
+
+		driver.findElement(By.cssSelector("input[placeholder='* Email']")).sendKeys("solvery1998@gmail.com");
+		driver.findElement(By.cssSelector("input[placeholder='* Username']")).sendKeys("Sundram Yadav");
+		driver.findElement(By.cssSelector("input[placeholder='* Password']")).sendKeys("Test1998");
+		driver.findElement(By.cssSelector("input[placeholder='* Password Confirmation']")).sendKeys("Test");
+		driver.findElement(By.cssSelector("button#enlist_btn")).click();
+
+	}
 
 	@Test
 	public void test() {
@@ -39,7 +69,7 @@ public class SoftAssertionDemo {
 		driver.findElement(By.cssSelector("input[placeholder='* Password Confirmation']")).sendKeys("Test");
 		driver.findElement(By.cssSelector("button#enlist_btn")).click();
 
-//		String[] firldErrors= {,};
+		String[] firldErrors = {,};
 		WebElement errorElement = driver.findElement(By.cssSelector("div[class='field_value']>small"));
 		String expectedString = "doesn't match Password";
 		SoftAssert softAssert = new SoftAssert();
@@ -48,13 +78,7 @@ public class SoftAssertionDemo {
 		softAssert.assertAll();
 	}
 
-	@BeforeMethod
-	public void beforeMethod() {
-
-		driver.manage().window().maximize();
-//		System.setProperty("webdriver.chromedriver", chromedriver);
-		driver.get("https://www.codewars.com/");
-	}
+	
 
 	@AfterMethod
 	public void afterMethod() {

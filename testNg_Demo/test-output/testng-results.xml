@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-31T09:01:32 IST" name="Default suite" finished-at="2023-12-31T09:01:40 IST" duration-ms="7731">
+  <suite started-at="2023-12-31T11:04:31 IST" name="Default suite" finished-at="2023-12-31T11:04:31 IST" duration-ms="119">
     <groups>
     </groups>
-    <test started-at="2023-12-31T09:01:32 IST" name="Default test" finished-at="2023-12-31T09:01:40 IST" duration-ms="7731">
-      <class name="com.demo_01.SoftAssertionDemo">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.demo_01.SoftAssertionDemo@a64e035]" started-at="2023-12-31T09:01:33 IST" name="beforeMethod" finished-at="2023-12-31T09:01:35 IST" duration-ms="2262" status="PASS">
+    <test started-at="2023-12-31T11:04:31 IST" name="Default test" finished-at="2023-12-31T11:04:31 IST" duration-ms="119">
+      <class name="com.demo_01.Demo02">
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="f" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test()[pri:0, instance:com.demo_01.SoftAssertionDemo@a64e035]" started-at="2023-12-31T09:01:35 IST" name="test" finished-at="2023-12-31T09:01:40 IST" duration-ms="4965" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="f" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.demo_01.SoftAssertionDemo@a64e035]" started-at="2023-12-31T09:01:40 IST" name="afterMethod" finished-at="2023-12-31T09:01:40 IST" duration-ms="410" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="f" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.demo_01.SoftAssertionDemo -->
+        </test-method> <!-- f -->
+        <test-method signature="g(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="g" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method signature="g(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="g" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method signature="g(java.lang.Integer,java.lang.String)[pri:0, instance:com.demo_01.Demo02@3232a28a]" started-at="2023-12-31T11:04:31 IST" name="g" data-provider="dp" finished-at="2023-12-31T11:04:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+      </class> <!-- com.demo_01.Demo02 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
