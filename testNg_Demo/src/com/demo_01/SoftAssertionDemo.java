@@ -17,16 +17,19 @@ import org.testng.annotations.AfterMethod;
 public class SoftAssertionDemo {
 //	String chromedriver = "C:\\Users\\HP\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";
 	ChromeDriver driver = new ChromeDriver();
+	SoftAssert softAssert = new SoftAssert();
 	@BeforeMethod
 	public void beforeMethod() {
 
-		driver.manage().window().maximize();
-//		System.setProperty("webdriver.chromedriver", chromedriver);
-		driver.get("https://www.codewars.com/");
+//		driver.manage().window().maximize();
+////		System.setProperty("webdriver.chromedriver", chromedriver);
+//		driver.get("https://www.codewars.com/");
 	}
 
 	@Test
-	public void test() {
+	public void test1() {
+		driver.manage().window().maximize();
+		driver.get("https://www.codewars.com/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		String expectedTitle = "Codewars - Achieve mastery through coding practice and developer mentorship";
 
@@ -49,17 +52,30 @@ public class SoftAssertionDemo {
 //		String[] firldErrors = {,};
 		WebElement errorElement = driver.findElement(By.cssSelector("div[class='field_value']>small"));
 		String expectedString = "doesn't match Password1";
-		SoftAssert softAssert = new SoftAssert();
+		
 		softAssert.assertEquals(expectedString, errorElement.getText());
 		System.out.println("This code will be executed even if the assertion fails.");
 		softAssert.assertAll();
 	}
 
+	@Test
+	public void test2() {
+		
+		System.out.println("Open Banking Webpage");
+		softAssert.assertEquals(true, false);
+		System.out.println("Validate the title");
+		softAssert.assertEquals(true, false);
+		System.out.println("Validate heading of dashboard");
+		softAssert.assertEquals(true, false);
+		System.out.println("click on a savings account");
+		softAssert.assertEquals(true, false);
+		softAssert.assertAll();
+	}
 	
 
 	@AfterMethod
 	public void afterMethod() {
-		driver.close();
+		driver.quit();
 	}
 
 }
