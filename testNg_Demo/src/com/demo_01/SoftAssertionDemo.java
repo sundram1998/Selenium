@@ -26,29 +26,6 @@ public class SoftAssertionDemo {
 	}
 
 	@Test
-	public void errorAssertions() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		String expectedTitle = "Codewars - Achieve mastery through coding practice and developer mentorship";
-
-		driver.getTitle().contains(expectedTitle);
-		System.out.println(driver.getTitle());
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='button-group is-center']/a")));
-		driver.findElement(By.xpath("//div[@class='button-group is-center']/a")).click();
-
-		WebElement linkGitGubAccountButton = driver.findElement(By.xpath("//div[@data-controller='auth']/button"));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='p-6 mb-2']/img")));
-		System.out.println(linkGitGubAccountButton.getText());
-
-		driver.findElement(By.cssSelector("input[placeholder='* Email']")).sendKeys("solvery1998@gmail.com");
-		driver.findElement(By.cssSelector("input[placeholder='* Username']")).sendKeys("Sundram Yadav");
-		driver.findElement(By.cssSelector("input[placeholder='* Password']")).sendKeys("Test1998");
-		driver.findElement(By.cssSelector("input[placeholder='* Password Confirmation']")).sendKeys("Test");
-		driver.findElement(By.cssSelector("button#enlist_btn")).click();
-
-	}
-
-	@Test
 	public void test() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		String expectedTitle = "Codewars - Achieve mastery through coding practice and developer mentorship";
@@ -69,9 +46,9 @@ public class SoftAssertionDemo {
 		driver.findElement(By.cssSelector("input[placeholder='* Password Confirmation']")).sendKeys("Test");
 		driver.findElement(By.cssSelector("button#enlist_btn")).click();
 
-		String[] firldErrors = {,};
+//		String[] firldErrors = {,};
 		WebElement errorElement = driver.findElement(By.cssSelector("div[class='field_value']>small"));
-		String expectedString = "doesn't match Password";
+		String expectedString = "doesn't match Password1";
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(expectedString, errorElement.getText());
 		System.out.println("This code will be executed even if the assertion fails.");
