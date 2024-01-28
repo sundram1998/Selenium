@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demo_01.AutomationPractices">
+      <class name="com.demo_01.GetWindowHandlePractice">
         <methods>
-          <include name="afterMethod"/>
-          <include name="testMethod"/>
-          <include name="test"/>
+          <include name="beforeClass"/>
+          <include name="getWindowHandlePractice"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.demo_01.AutomationPractices -->
+      </class> <!-- com.demo_01.GetWindowHandlePractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

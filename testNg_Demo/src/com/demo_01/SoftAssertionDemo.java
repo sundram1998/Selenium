@@ -75,7 +75,7 @@ public class SoftAssertionDemo {
 
 	@AfterMethod
 	public void afterMethod() {
-		driver.quit();
+		driver.quit(); 
 	}
 
 }

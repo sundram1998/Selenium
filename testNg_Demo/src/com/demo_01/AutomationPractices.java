@@ -39,7 +39,9 @@ public class AutomationPractices {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/div[@class='logo pull-left']/a/img")));
 
 //		String h2Text = "Full-Fledged practice website for Automation Engineers";//
-		WebElement h2Text= driver.findElement(By.xpath("//div[@class='col-sm-6']/h2"));
+//		WebElement h2Text= driver.findElement(By.xpath("//div[@class='col-sm-6']/h2"));
+		WebElement h2Text=new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='col-sm-6']/h2")));
 		softAssert.assertEquals("Full-Fledged practice website for Automation Engineers", h2Text.getText());
 		if(h2Text.isDisplayed()) {
 			System.out.println(h2Text.getText());

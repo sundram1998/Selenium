@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-27T00:22:08 IST" name="Default suite" finished-at="2024-01-27T00:22:18 IST" duration-ms="10191">
+  <suite started-at="2024-01-28T19:53:26 IST" name="Default suite" finished-at="2024-01-28T19:53:35 IST" duration-ms="8965">
     <groups>
     </groups>
-    <test started-at="2024-01-27T00:22:08 IST" name="Default test" finished-at="2024-01-27T00:22:18 IST" duration-ms="10191">
-      <class name="com.demo_01.AutomationPractices">
-        <test-method is-config="true" signature="testMethod()[pri:0, instance:com.demo_01.AutomationPractices@a64e035]" started-at="2024-01-27T00:22:08 IST" name="testMethod" finished-at="2024-01-27T00:22:13 IST" duration-ms="5098" status="PASS">
+    <test started-at="2024-01-28T19:53:26 IST" name="Default test" finished-at="2024-01-28T19:53:35 IST" duration-ms="8965">
+      <class name="com.demo_01.SelectElementPractice">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.demo_01.SelectElementPractice@35d3ab60]" started-at="2024-01-28T19:53:26 IST" name="beforeClass" finished-at="2024-01-28T19:53:26 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method signature="test()[pri:0, instance:com.demo_01.AutomationPractices@a64e035]" started-at="2024-01-27T00:22:13 IST" name="test" finished-at="2024-01-27T00:22:17 IST" duration-ms="4304" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:com.demo_01.SelectElementPractice@35d3ab60]" started-at="2024-01-28T19:53:26 IST" name="f" finished-at="2024-01-28T19:53:34 IST" duration-ms="8411" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.demo_01.AutomationPractices@a64e035]" started-at="2024-01-27T00:22:17 IST" name="afterMethod" finished-at="2024-01-27T00:22:18 IST" duration-ms="702" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.demo_01.SelectElementPractice@35d3ab60]" started-at="2024-01-28T19:53:34 IST" name="afterClass" finished-at="2024-01-28T19:53:35 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.demo_01.AutomationPractices -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.demo_01.SelectElementPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
