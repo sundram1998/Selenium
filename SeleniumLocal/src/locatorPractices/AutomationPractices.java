@@ -14,8 +14,9 @@ public class AutomationPractices {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		WebDriver driver = new ChromeDriver();
-		System.setProperty("webdriver.chromedriver", "/Users/rahulshetty/Documents/chromedriver");
+		ChromeDriver driver=new ChromeDriver();
+//		WebDriver driver = new ChromeDriver();
+//		System.setProperty("webdriver.chromedriver", "/Users/rahulshetty/Documents/chromedriver");
 		driver.manage().window().maximize();
 		driver.get("https://automationexercise.com/");
 

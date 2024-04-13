@@ -38,7 +38,7 @@ public class ActionDragAndDropPractice {
 	}
 
 	@Test
-	public void dragAndDrop() {
+	public void dragAndDrop() throws InterruptedException {
 		driver.get("https://jqueryui.com/droppable/");
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -51,23 +51,27 @@ public class ActionDragAndDropPractice {
 		actions.clickAndHold(driver.findElement(By.id("draggable")))
 				.moveToElement(driver.findElement(By.xpath("//div[@id=\"droppable\"]"))).release().build().perform();
 
+		driver.navigate().refresh();
+		driver.switchTo().frame(0);
+		actions.dragAndDrop(driver.findElement(By.id("draggable")), driver.findElement(By.xpath("//div[@id=\"droppable\"]"))).build().perform();
+		Thread.sleep(3000);
 	}
 
-	@Test
-	public void implicitWait() {
-		driver.get("https://www.ebay.com/");
-		driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("Protien");
-		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
-	}
+//	@Test
+//	public void implicitWait() {
+//		driver.get("https://www.ebay.com/");
+//		driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("Protien");
+//		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+//	}
 	
-	@BeforeClass
+	@BeforeClass //run before first test of a class
 	public void beforeClass() {
 		driver.manage().window().maximize();
 //		
 		driver.manage().deleteAllCookies();
 	}
 
-	@AfterClass
+	@AfterClass  //runs before last test of a class
 	public void afterClass() {
 		driver.quit();
 	}

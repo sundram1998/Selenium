@@ -17,9 +17,9 @@ public class CountOfStringsInList {
 		ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList("Satyam", "Shivam", "Sundram"));
 		System.out.println(arrayList);
 
-//		Map<String, Long> result = arrayList.stream()
-//				.collect(Collectors.groupingBy(e -> e.toString(), Collectors.counting()));
-//		System.out.println(result);
+		Map<String, Long> result = arrayList.stream()
+				.collect(Collectors.groupingBy(e -> e.toString(), Collectors.counting()));
+		System.out.println(result);
 		
 		Set<String> distinct = new HashSet<>(arrayList);
         for (String s: distinct) {
