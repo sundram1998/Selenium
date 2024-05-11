@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class CountOfStringsInListUsingSet {
@@ -12,6 +13,7 @@ public class CountOfStringsInListUsingSet {
 		// TODO Auto-generated method stub
 		ArrayList<String> arrayList=new ArrayList<String>(Arrays.asList("sun","mon","sun","tue"));
 		
+//		List<Strig>
 		Set<String> set=new HashSet<String>(arrayList);
 		for(String s:set) {
 			System.out.println(s+" "+Collections.frequency(arrayList, s));
