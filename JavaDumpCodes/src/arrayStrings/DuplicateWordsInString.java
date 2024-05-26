@@ -58,7 +58,7 @@ public class DuplicateWordsInString {
 		String string = "This is java code finding duplicates words in java code words";
 		duplicateWordsUsingMap(string);
 //		duplicatesUsingCollection(string);
-		duplicatesUsingCollectors(string);
+//		duplicatesUsingCollectors(string);
 
 	}
 

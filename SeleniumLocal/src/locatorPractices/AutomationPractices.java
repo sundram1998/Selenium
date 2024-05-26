@@ -1,18 +1,28 @@
 package locatorPractices;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
+import com.google.common.base.Function;
+
 public class AutomationPractices {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		ChromeDriver driver=new ChromeDriver();
 //		WebDriver driver = new ChromeDriver();
@@ -51,7 +61,7 @@ public class AutomationPractices {
 		} else {
 			System.out.println("New User Signup! Text is absent");
 		}
-		
+
 		driver.findElement(By.name("name")).sendKeys("Sundaram Yadav");
 		driver.findElement(By.xpath("//form[@action='/signup']/input[@type='email']")).sendKeys("abcdqawedfxxxx@gmail.com");
 		driver.findElement(By.xpath("//button[@data-qa='signup-button']")).click();
@@ -62,6 +72,12 @@ public class AutomationPractices {
 		boolean isDisplayed=accountInfo.isDisplayed();
 		System.out.println(accountInfo.getText());
 		System.out.println("Is accountInfo displayed: "+isDisplayed);
+		
+		TakesScreenshot takesScreenshot=driver;
+		File srcFile=takesScreenshot.getScreenshotAs(OutputType.FILE);
+		File trgFile=new File("C:\\Users\\HP\\downloads");
+		FileUtils.copyFileToDirectory(srcFile, trgFile);
+//		driver.switchTo().frame(0);
 		Thread.sleep(5);
 		driver.quit();
 		softAssert.assertAll();

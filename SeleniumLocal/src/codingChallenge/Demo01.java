@@ -1,8 +1,11 @@
 package codingChallenge;
 
+import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,8 +45,10 @@ public class Demo01 {
 		softAssert.assertEquals(expectedString, errorElement.getText());
 		System.out.println("This code will be executed even if the assertion fails.");
 		
-		
-		
+//		TakesScreenshot tScreenshot=(TakesScreenshot)driver;
+//		File srcFile=tScreenshot.getScreenshotAs(OutputType.FILE);
+//		File target=new File("C:\\Users\\HP\\Downloads");
+//		FileU
 		Thread.sleep(3000);
 		driver.close();
 		softAssert.assertAll();
